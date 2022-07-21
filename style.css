@@ -9,7 +9,7 @@ body{
     height: 100%;
     background: linear-gradient(#aaa1a1, #ffffff);
     background-size: cover;
-    transition: all 1s ease;
+    transition: all 1s linear;
 }
 
 .container{
@@ -23,6 +23,7 @@ body{
 header{
     width: 100%;
     display: flex;
+    font-size: 1rem;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
@@ -65,7 +66,7 @@ h1,h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .square{
@@ -85,7 +86,7 @@ button{
     display: grid;
     padding: 1rem;
     position: absolute;
-    bottom: 2%;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
     background-color: forestgreen;
@@ -105,5 +106,12 @@ div.fadeOut {
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s ease;
+}
+
+@media screen and (max-width: 500px) {
+    
+    header h1{
+        font-size: 1.5rem;
+    }
 }
 

@@ -42,8 +42,10 @@ function countDown() {
         clearInterval(countDownTimerId)
         clearInterval(timeId)
         boardOut.classList.add('fadeOut')
-        gameOver.textContent = `You killed ${result} mosquitoes`
+        gameOver.textContent = `You knacked ${result} mosquitoes
+         in 10 seconds`
     }
+
     setTimeout(() => {
         gameOver.textContent = `Reloading`
         location.reload()
